@@ -23,21 +23,7 @@ setTimeout(() => { const intervalId2 = setInterval(function() {
 
     if (j === txt2.length) {
         clearInterval(intervalId2);
+
     }
 }, 120); }, 1400);
 
-/*
-
-const expandText = document.getElementById("expand-text");
-
-function expandTextFunc() {
-    document.getElementById("expand-text").innerHTML = 'dkjhkjdhkljdhflkjds';
-}
-
-function returnTextFunc() {
-    document.getElementById("expand-text").innerHTML = 'dkjhkjdhkljdhflkjds';
-}
-
-expandText.onmouseover = expandTextFunc;
-expandText.onmouseout = returnTextFunc;
-*/
