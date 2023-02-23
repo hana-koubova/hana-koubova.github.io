@@ -9,6 +9,10 @@ main {
     background-color: blanchedalmond;
 }
 
+h2 {
+    max-width: 80%;
+}
+
 
 /* -----Header----- */
 
@@ -22,6 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    overflow: hidden;
 }
 
 header h2 {
@@ -46,6 +51,7 @@ header h2 {
 
 nav {
     height: 100%;
+    overflow: hidden;
 }
 
 header ul {
@@ -54,6 +60,7 @@ header ul {
     height: 100%;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 header li {
@@ -452,3 +459,32 @@ footer {
     }
 }
 
+@media only screen and (max-width: 700px) {
+    #skills-wrap {
+        flex-direction: column;
+    }
+    
+    h2 {
+        font-size: 1.5em;
+    }
+    .minuses {
+        visibility: hidden;
+    }
+
+    header nav a {
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 530px) {
+    header nav a {
+        font-size: 0.5em;
+    }
+    header ul {
+        visibility: collapse;
+    }
+
+    header a {
+        padding: 10px;
+    }
+}
