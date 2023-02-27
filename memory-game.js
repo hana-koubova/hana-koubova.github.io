@@ -33,7 +33,7 @@ let clickCounter = 0;
 
 function changeButtonStartToReset() {
     if (clickCounter === 0) {
-        startGameBut.innerHTML = "Start Again";
+        startGameBut.innerHTML = "Reset";
     }
 };
 
@@ -46,7 +46,7 @@ function heading1Change() {
 
 function heading2Change() {
     //if (clickCounter === 0) {
-        heading2.innerHTML = "Number of numbers: " + numberOfNumbers;
+        heading2.innerHTML = "Number of digits: " + numberOfNumbers;
         //numberOfNumbers++;
     //}
 };
@@ -84,12 +84,13 @@ function resetGame() {
         let numberOfNumbers = 3;
         let randomNumbersArr = [];
         heading1.innerHTML = "Round " + roundNumber;
-        heading2.innerHTML = "Number of numbers: " + numberOfNumbers;
+        heading2.innerHTML = "Number of digits: " + numberOfNumbers;
         clickCounter = 0;
         initialNumbersFunction();
         numbersArray.innerHTML = randomNumbersArr;
         enterNumbersDissapear();
         clearInputField();
+        numbersArray.style.visibility = "visible";
     }
 }
 

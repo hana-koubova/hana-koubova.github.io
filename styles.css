@@ -448,7 +448,6 @@ footer {
 /* ------Number MEMORY GAME------*/
 
 
-
 .memory-game-page {
     position: relative;
     display: flex;
@@ -471,24 +470,24 @@ footer {
     overflow: auto;
 }
 
-#memory-game-start, #resetBut {
-    width: 300px;
-    height: 50px;
+#memory-game-start {
+    width: 150px;
+    height: 40px;
     background-color: orange;
     color: white;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.2em;
     border-radius: 10px;
     transition-duration: 200ms;
 }
-#memory-game-start:hover #resetBut:hover {
+#memory-game-start:hover {
     cursor: pointer;
     background-color: orangered;
     transition-duration: 200ms;
 }
 
-#enter-numbers {
-    width: 300px;
+#submitInput {
+    width: 200px;
     height: 50px;
     background-color: yellowgreen;
     color: white;
@@ -498,7 +497,7 @@ footer {
     transition-duration: 200ms;
 }
 
-#enter-numbers:hover {
+#submitInput:hover {
     cursor: pointer;
     background-color: green;
     transition-duration: 200ms;
@@ -529,7 +528,7 @@ footer {
 input {
     width: 300px;
     height: 30px;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 input::-webkit-outer-spin-button,
@@ -539,8 +538,17 @@ input::-webkit-inner-spin-button {
 }
 
 #appear-after-start {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     visibility: collapse;
 }
+
+#appear-after-start * {
+    margin: 10px;
+}
+
 
 #user-input {
     display: flex;
