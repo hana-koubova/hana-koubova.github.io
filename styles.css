@@ -6,11 +6,12 @@
 }
 
 main {
-    background-color: blanchedalmond;
+    background-color: white;
 }
 
 h2 {
     max-width: 80%;
+    text-align: center;
 }
 
 
@@ -89,6 +90,12 @@ header a {
     top: 80px;
 }
 
+.line-1 {
+    border: 1px dotted rgba(0, 0, 0, 0.2);
+    width: 60%;
+    margin: 0 auto;
+}
+
 /* -----Intro----- */
 
 #hero {
@@ -117,10 +124,6 @@ header a {
     position: relative;
 } 
 
-#overlay {
-    text-align: center;
-}
-
 #overlay h1, h2 {
     z-index: 2;
     color: white;
@@ -133,6 +136,10 @@ h1 {
 #headline-wrap {
     width: 100%;
     height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* -----Bio----- */
@@ -326,12 +333,19 @@ table th {
     background-position: center;
 }
 
-.name-one {
+.project-two {
+    background-image: url("figures/memory-game-view.png");
+    background-size: cover;
+    background-position: center;
+}
+
+
+#project-name {
     background-color: rgba(0, 0, 0, 0.7)
     
 }
 
-.name-one a {
+#project-name a {
     text-decoration: none;
     color: white;
 }
@@ -371,7 +385,7 @@ table th {
 /* -----Footer----- */
 
 footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
     height: 80px;
@@ -431,6 +445,127 @@ footer {
     transition-duration: 200ms;
 }
 
+/* ------Number MEMORY GAME------*/
+
+
+
+.memory-game-page {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.memory-game-page h2 {
+    color: black;
+}
+
+#memory-game-introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    overflow: auto;
+}
+
+#memory-game-start, #resetBut {
+    width: 300px;
+    height: 50px;
+    background-color: orange;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+#memory-game-start:hover #resetBut:hover {
+    cursor: pointer;
+    background-color: orangered;
+    transition-duration: 200ms;
+}
+
+#enter-numbers {
+    width: 300px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition-duration: 200ms;
+}
+
+#enter-numbers:hover {
+    cursor: pointer;
+    background-color: green;
+    transition-duration: 200ms;
+}
+
+#go {
+    width: 50px;
+    height: 50px;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: 700;
+    font-size: 1.5em;
+    border-radius: 10px;
+    transition-duration: 200ms;
+    visibility: collapse;
+}
+
+#go:hover {
+    cursor: pointer;
+    background-color: green;
+    transition-duration: 200ms;
+}
+
+#buttons {
+    display: flex;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    font-size: 1.4em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#appear-after-start {
+    visibility: collapse;
+}
+
+#user-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#user-input * {
+    margin: 10px;
+}
+
+#numbers-arr-par {
+    font-size: 2em;
+    background-color: lemonchiffon;
+}
+
+.unselectable {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 /* -----Medias----- */
 
 @media only screen and (min-width: 850px) and (max-width: 1200px) {
@@ -468,7 +603,7 @@ footer {
         font-size: 1.5em;
     }
     .minuses {
-        visibility: hidden;
+        visibility: collapse;
     }
 
     header nav a {
@@ -486,5 +621,9 @@ footer {
 
     header a {
         padding: 10px;
+    }
+
+    h1 {
+        font-size: 2.2em;
     }
 }
