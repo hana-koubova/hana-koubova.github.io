@@ -21,6 +21,7 @@ const goButton = document.getElementById('go');
 
 const appearAfterStart = document.getElementById("appear-after-start");
 const numbersArray = document.getElementById('numbers-arr-par');
+const messageField = document.getElementById('message-par');
 
 const heading1 = document.getElementById('heading1');
 const heading2 = document.getElementById('heading2');
@@ -30,6 +31,12 @@ const initialNumbers = initialNumbersFunction();
 let roundNumber = 1;
 let numberOfNumbers = 3;
 let clickCounter = 0;
+
+const messageOne = "You can do better than that! Try again.";
+const messageTwo = "Good job, you remember " + numberOfNumbers + " digits in a row!";
+const messageThree = "Excellent! Can you get even further?";
+const messageFour = "You're killing it! Try again.";
+
 
 function changeButtonStartToReset() {
     if (clickCounter === 0) {
@@ -91,6 +98,7 @@ function resetGame() {
         enterNumbersDissapear();
         clearInputField();
         numbersArray.style.visibility = "visible";
+        messageField.innerHTML = "";
     }
 }
 
@@ -145,7 +153,19 @@ function getInputValue() {
         //console.log("testing logging");
         numbersArray.style.visibility = "visible";
         numbersArray.innerHTML = "Game Over!";
-    } 
+        if (numberOfNumbers > 5 && numberOfNumbers <= 7) {
+            messageField.innerHTML = messageOne;
+        } else if (numberOfNumbers > 7 && numberOfNumbers <= 9) {
+            messageField.innerHTML = messageTwo;
+        } else if (numberOfNumbers > 9 && numberOfNumbers <= 11) {
+            messageField.innerHTML = messageThree;
+        } else if (numberOfNumbers > 11 && numberOfNumbers <= 15) {
+            messageField.innerHTML = messageFour;
+        }
+
+        }
+        
+     
 };
 
 
