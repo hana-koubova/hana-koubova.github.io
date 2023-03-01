@@ -33,7 +33,7 @@ let numberOfNumbers = 3;
 let clickCounter = 0;
 
 const messageOne = "You can do better than that! Try again.";
-const messageTwo = "Good job, you remember " + numberOfNumbers + " digits in a row!";
+const messageTwo = "Good job!";
 const messageThree = "Excellent! Can you get even further?";
 const messageFour = "You're killing it! Try again.";
 
@@ -87,8 +87,8 @@ function clearInputField() {
 function resetGame() {
     if (clickCounter > 0) {
         console.log('click counter trigger')
-        let roundNumber = 1;
-        let numberOfNumbers = 3;
+        roundNumber = 1;
+        numberOfNumbers = 3;
         let randomNumbersArr = [];
         heading1.innerHTML = "Round " + roundNumber;
         heading2.innerHTML = "Number of digits: " + numberOfNumbers;
@@ -153,6 +153,7 @@ function getInputValue() {
         //console.log("testing logging");
         numbersArray.style.visibility = "visible";
         numbersArray.innerHTML = "Game Over!";
+        console.log(numberOfNumbers)
         if (numberOfNumbers > 5 && numberOfNumbers <= 7) {
             messageField.innerHTML = messageOne;
         } else if (numberOfNumbers > 7 && numberOfNumbers <= 9) {
