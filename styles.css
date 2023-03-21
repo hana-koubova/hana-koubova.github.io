@@ -395,7 +395,7 @@ table th {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template: 400px / repeat(3, 1fr);
+    grid-template: repeat(2, 400px) / repeat(3, 1fr);
     gap: 20px 0px;
     justify-content: center;
     justify-items: center;
@@ -443,6 +443,12 @@ table th {
 
 .project-three {
     background-image: url("figures/valencia-city-gallery-view.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.project-four {
+    background-image: url("figures/calculator-view.png");
     background-size: cover;
     background-position: center;
 }
@@ -982,7 +988,7 @@ input::-webkit-inner-spin-button {
 
 @media only screen and (max-width: 849px) {
     #wrap-projects {
-        grid-template: repeat(3, 300px) / repeat(1, 1fr);
+        grid-template: repeat(4, 300px) / repeat(1, 1fr);
     }
 }
 
