@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hana Koubova</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../../styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header>
+            <div id="expand-wrap">
+                <h2 id="expand-text1">&#60 </h2>
+                <h2 id="expand-text2">/&#62</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="page-container">
+                <div id="content-wrap">
+                    <h1 id="quiz-headline">Demo language quiz app</h1>
+                    <h2 id="quiz-second-headline">Spanish prepositions</h2>
+                    <div id="quiz-wrap">
+                        <div id="quiz-question">Here is question</div>
+                        <div id="quiz-evaluation"></div>
+                        <div id="quiz-answers">
+                            <div class="quiz-answer">
+                                <input type="radio" id="first-input" name="quiz-options" required>
+                                <label id="label-one" for="first-input">Label 1</label>
+                            </div>
+                            <div class="quiz-answer">
+                                <input type="radio" id="second-input" name="quiz-options" required>
+                                <label id="label-two"  for="second-input">Label 2</label>
+                            </div>
+                            <div class="quiz-answer">
+                                <input type="radio" id="third-input" name="quiz-options" required>
+                                <label id="label-three"  for="third-input">Label 3</label>
+                            </div>
+
+                        </div>
+                        <div id="quiz-buttons">
+                            <button id="quiz-reset">Reset quiz</button>
+                            <button id="quiz-next">Next</button>
+                        </div>
+                    </div>
+                    <h3 id="quiz-page-numbers"></h3>
+                </div>
+            </div>
+            <br>
+            <br>
+            <footer>
+                <p>Copyright Hana Koubova 2023</p>
+            </footer>
+        </main>
+        <script src="spanish-quiz-app.js"></script>
+    </body>
+
+    </html>
