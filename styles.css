@@ -1015,7 +1015,7 @@ input::-webkit-inner-spin-button {
     color: black;
     margin: 20px auto;
     font-size: 1.2em;
-    text-align: center;
+    
 }
 
 #quiz-page-numbers {
@@ -1027,6 +1027,7 @@ input::-webkit-inner-spin-button {
     margin-top: 60px;
     margin-bottom: 40px;
     font-size: 1.5em;
+    text-align: center;
 }
 
 #quiz-answers {
@@ -1119,6 +1120,10 @@ input::-webkit-inner-spin-button {
     #quiz-reset, #quiz-next {
         font-size: 0.8em;
         width: 80px;
+    }
+
+    #quiz-wrap {
+        width: 90%;
     }
 }
 
