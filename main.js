@@ -48,7 +48,7 @@ const checkIfInViewportInterval = setInterval(function() {
     console.log(isGrowing);
 
     if (isGrowing === true) {
-        growingBar.style.width = '30%';
+        growingBar.style.width = '40%';
     } else {
         growingBar.style.width = '10%';
     };

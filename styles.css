@@ -12,23 +12,24 @@ main {
 h2 {
     max-width: 80%;
     text-align: center;
+    color: white;
 }
 
 
 /* -----Header----- */
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
+    /*top: 0;
+    left: 0;*/
     background-color: grey;
     width: 100%;
-    height: 80px;
-    display: flex;
+    min-height: 80px;
+    /*display: flex;
     justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
+    align-items: center;*/
+    /*overflow: hidden;*/
+} 
 
 header h2 {
     font-size: 30px;
@@ -36,6 +37,10 @@ header h2 {
     padding: 5px;
 }
 
+.navbar {
+    background-color: lightgrey;
+}
+/*
 #expand-wrap {
     border: 2px solid white;
     margin-left: 20px;
@@ -48,13 +53,14 @@ header h2 {
 #expand-wrap:hover {
     width: 180px;
     transition-duration: 1000ms;
-}
+} */
+
 
 nav {
-    height: 100%;
-    overflow: hidden;
+    min-height: 80px;
 }
 
+/*
 header ul {
     display: flex;
     padding-right: 20px;
@@ -62,10 +68,10 @@ header ul {
     display: flex;
     align-items: center;
     overflow: hidden;
-}
+} */
 
 header li {
-    display: block;
+    /*display: block;*/
     padding: 20px;
     transition-duration: 200ms;
 }
@@ -87,7 +93,7 @@ header a {
 #page-container {
     position: relative;
     min-height: 100vh;
-    top: 80px;
+    /*top: 80px;*/
 }
 
 #content-wrap {
@@ -100,6 +106,10 @@ header a {
     width: 60%;
     margin: 0 auto;
 }
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
 
 /* -----Intro----- */
 
@@ -130,8 +140,8 @@ header a {
 } 
 
 #overlay h1, h2 {
-    z-index: 2;
-    color: white;
+    z-index: 10;
+    color: white !important;
 }
 
 h1 {
@@ -1133,7 +1143,7 @@ input::-webkit-inner-spin-button {
 
 @media only screen and (min-width: 850px) and (max-width: 1200px) {
     #wrap-projects {
-        grid-template: repeat(2, 300px) / repeat(2, 1fr);
+        grid-template: repeat(3, 300px) / repeat(2, 1fr);
     }
 }
 
@@ -1168,19 +1178,19 @@ input::-webkit-inner-spin-button {
     .minuses {
         visibility: collapse;
     }
-
+/*
     header nav a {
         font-size: 1em;
-    }
+    }*/
 }
 
 @media only screen and (max-width: 530px) {
     header nav a {
-        font-size: 0.5em;
-    }
+        font-size: 1.1em;
+    }/*
     header ul {
         visibility: collapse;
-    }
+    } */
 
     header a {
         padding: 10px;
