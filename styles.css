@@ -12,7 +12,7 @@ main {
 h2 {
     max-width: 80%;
     text-align: center;
-    color: white;
+    color: black;
 }
 
 
@@ -216,7 +216,7 @@ h1 {
 }
 
 #bio h2 {
-    color: orange;
+    color: orange !important;
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: left;
@@ -256,7 +256,7 @@ table th {
 */
 
 #journey h2 {
-    color: brown;
+    color: brown !important;
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: left;
@@ -323,7 +323,7 @@ table th {
 
 
 #skills h2 {
-    color: brown;
+    color: brown !important;
     margin-top: 50px;
     margin-bottom: 10px;
     text-align: left;
@@ -337,14 +337,12 @@ table th {
     border: 1px solid brown;
 }
 
-
 #skills-wrap {
     width: 90%;
-    display: flex;
-    min-height: 150px;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template: repeat(2, 100px) / repeat(3, 1fr);
     margin: 30px auto;
+    justify-items: center;
 }
 
 #skills-container {
@@ -379,7 +377,7 @@ table th {
 }
 
 .html-percentage {
-    width: 60%;
+    width: 80%;
 }
 
 .css-percentage {
@@ -392,6 +390,14 @@ table th {
 
 .python-percentage {
     width: 50%;
+}
+
+.react-percentage {
+    width: 15%;
+}
+
+.node-express-percentage {
+    width: 30%;
 }
 
 
@@ -441,7 +447,7 @@ table th {
 
 #projects h2 {
     font-size: 3em;
-    color: black;
+    color: black !important;
 }
 
 .project-one {
@@ -517,10 +523,6 @@ table th {
     color: white;
 }
 
-#link-test {
-
-}
-
 /* -----Contact----- */
 
 #contact {
@@ -562,11 +564,11 @@ footer {
     height: 80px;
     background-color: black;
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    /*text-align: center;*/
 }
-
 
 /* DAY PREDICTOR */
 
@@ -1167,9 +1169,24 @@ input::-webkit-inner-spin-button {
     }
 }
 
+@media only screen and (min-width: 700px) and (max-width: 1120px) {
+    #skills-wrap {
+        grid-template: repeat(3, 100px) / repeat(2, 1fr);
+    }
+
+    #skills-text {
+        font-size: 1.2em;
+    }
+}
+
+
 @media only screen and (max-width: 700px) {
     #skills-wrap {
-        flex-direction: column;
+        grid-template: repeat(6, 100px) / 1fr;
+    }
+
+    .to-hide {
+        display: none;
     }
     
     h2 {
@@ -1177,6 +1194,10 @@ input::-webkit-inner-spin-button {
     }
     .minuses {
         visibility: collapse;
+    }
+
+    #skills-text {
+        font-size: 1.2em;
     }
 /*
     header nav a {
