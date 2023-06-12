@@ -87,7 +87,7 @@ const projects = [{
     {
         projectName: "Joke CRUD App",
         imgSrc: "./figures/joke-generator-view.png",
-        pageSrc: "",
+        pageSrc: "./projects/joke-generator/joke-generator.html",
         technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git"],
         projectGroup: "Back-end",
         objectives: "I created a simple CRUD app to demonstrate my undestanding of HTTP requests. The app will generated random joke from a database. User can add jokes into the database and also delete them."
