@@ -95,7 +95,7 @@ const projects = [{
     {
         projectName: "Log In",
         imgSrc: "./figures/log-in-view.png",
-        pageSrc: "",
+        pageSrc: "./projects/log-in/log-in.html",
         technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git"],
         projectGroup: "Back-end",
         objectives: "This simple log in page was created after I went through course on autorization and authetification. It is still in progress."

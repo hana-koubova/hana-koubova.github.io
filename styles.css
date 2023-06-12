@@ -1535,7 +1535,7 @@ input::-webkit-inner-spin-button {
 
 /* ----- Joke Generator App ---- */
 
-.joke-generator-page {
+.joke-generator-page, .log-in-page {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
