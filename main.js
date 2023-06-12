@@ -102,6 +102,7 @@ const projects = [{
     }
     ]
 
+console.log("hello, this is a test");
 
 const redirect = function(src) {
     window.location.href = src;
