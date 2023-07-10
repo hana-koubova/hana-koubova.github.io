@@ -674,10 +674,18 @@ h1 {
     width: 90%;
     display: grid;
     grid-template: repeat(2, 100px) / repeat(3, 1fr);
+    gap: 4em;
     margin: 30px auto;
     justify-items: center;
 }
 
+#skills-wrap img {
+    height: 100px;
+    width: auto;
+    margin: 10px;
+
+}
+/*
 #skills-container {
     margin: auto 20px;
     padding: 10px;
@@ -732,7 +740,7 @@ h1 {
 .node-express-percentage {
     width: 30%;
 }
-
+*/
 
 /* -----Projects----- */
 
