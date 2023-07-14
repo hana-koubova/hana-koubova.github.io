@@ -99,6 +99,14 @@ const projects = [{
         technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git"],
         projectGroup: "Back-end",
         objectives: "This simple log in page was created after I went through course on autorization and authetification. It is still in progress."
+    },
+    {
+        projectName: "Web Scraping and uploading",
+        imgSrc: "./figures/web-scraper-view.png",
+        pageSrc: "./projects/web-scraper/web-scraper.html",
+        technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git", " Python", " JSON"],
+        projectGroup: "Back-end",
+        objectives: "This project was created to scrape data from a testing website and further upload those through a HTTP requests to a clean frontend layout."
     }
     ]
 
