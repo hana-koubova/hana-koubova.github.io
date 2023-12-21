@@ -22,6 +22,7 @@ header {
     position: relative;
     width: 100%;
     min-height: 80px;
+    
 } 
 
 header h2 {
@@ -31,7 +32,7 @@ header h2 {
 }
 
 .navbar {
-    background-color: white;
+    background-color: bisque;
 }
 
 .collapse {
@@ -47,29 +48,31 @@ nav {
 header li {
     padding: 20px;
     transition-duration: 200ms;
+    list-style: none;
 }
 
 header li:hover {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(248, 192, 124);
     transition-duration: 200ms;
 }
 
 header a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5em;
 }
 
 
 /* -----Main structure----- */
 
+
 #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 #content-wrap {
-    /*height: 100vh;*/
+    /*height: 100vh;*/ /*This was commented out */
     padding-bottom: 80px;
 }
 
@@ -88,53 +91,6 @@ header a {
 }
 
 /* -----Intro----- */
-/*
-#hero {
-    background-image: url("./figures/hero-background.avif");
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#overlay:before {
-    content: "";
-    z-index: 1;
-    display: block;
-    position: absolute;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-#overlay * {
-    position: relative;
-} 
-
-#overlay h1, h2 {
-    z-index: 10;
-    color: white !important;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-#headline-wrap {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-*/
-
-/*----- New Hero---*/
 
 .hero {
     display: flex;
@@ -583,7 +539,7 @@ h1 {
 
 #bio li {
     margin: 15px;
-    list-style-type: none;
+    /*list-style-type: none;*/
 }
 
 #bio h2 {
@@ -701,62 +657,6 @@ h1 {
     margin: 10px;
 
 }
-/*
-#skills-container {
-    margin: auto 20px;
-    padding: 10px;
-    width: 80%;
-    height: 60px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#skills-text {
-    font-size: 1.5em;
-}
-
-#skills-bar {
-    width: 70%;
-    height: 20px;
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 15px;
-}
-
-#bar-percentage {
-    height: 19px;
-    background-color: green;
-    border-radius: 15px;
-}
-
-.html-percentage {
-    width: 80%;
-}
-
-.css-percentage {
-    width: 80%;
-}
-
-.js-percentage {
-    width: 50%;
-}
-
-.python-percentage {
-    width: 50%;
-}
-
-.react-percentage {
-    width: 15%;
-}
-
-.node-express-percentage {
-    width: 30%;
-}
-*/
 
 /* -----Projects----- */
 
@@ -813,6 +713,10 @@ h1 {
 
 .project-back-end {
     background-color: rgb(150, 233, 197);
+}
+
+.project-data-science {
+    background-color: bisque;
 }
 
 .project-sub-div-left {
@@ -1476,6 +1380,35 @@ input::-webkit-inner-spin-button {
     .video {
         width: 95%;
     }
+}
+
+/* -------- seismic page ----------- */
+
+.seismic-pics {
+    width: 80%;
+    max-width: 600px;
+}
+
+.test-wrap {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.seismic-project-wrap {
+    position: relative;
+    margin-top: 100px;
+    min-height: 80%;
+    width: 60%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 50px;
 }
 
 /* -----Medias only for quiz----- */
