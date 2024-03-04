@@ -1,130 +1,56 @@
-/*
-
-// Old Hero with typing text - for future reference
-
-const outputDiv1 = document.getElementById('h1-hello');
-const outputDiv2 = document.getElementById('h2-aspiring');
-
-const txt1 = "Hi, I'm Hana";
-const txt2 = "junior developer";
-
-let i = 0;
-let j = 0;
-
-const intervalId1 = setInterval(function() {
-    outputDiv1.innerHTML += txt1[i];
-    i++;
-
-    if (i === txt1.length) {
-        clearInterval(intervalId1);
-    }
-}, 100);
-
-
-setTimeout(() => { const intervalId2 = setInterval(function() {
-    outputDiv2.innerHTML += txt2[j];
-    j++;
-
-    if (j === txt2.length) {
-        clearInterval(intervalId2);
-
-    }
-}, 120); }, 1400);
-*/
-
-// when  journey bar in the viewport
-/*
-const growingBar = document.getElementById('journey-bar-full');
-
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-
-
-const checkIfInViewportInterval = setInterval(function() {
-    var isGrowing = isInViewport(growingBar);
-    console.log(isGrowing);
-
-    if (isGrowing === true) {
-        growingBar.style.width = '50%';
-    } else {
-        growingBar.style.width = '10%';
-    };
-}, 1000) */
 
 // Projects dynamic adding
 
-const projects = [/*{
-        projectName: "Localization of seismology events",
-        imgSrc: "./figures/kronebreen-plotting.png",
-        pageSrc: "./projects/icequakes-project/icequakes-loc-project.html",
-        technologyUsed: ["Python3", "Numpy"],
-        projectGroup: "Data Analysis",
-        objectives: "The main objective of this research paper was to identify the most accurate method for tracking and localizing icequakes (seismic events emitted by glaciers)."
-    },*/
+const projects = [
+    
+    {
+        projectName: "Job Board Full-stack App",
+        imgSrc: "./figures/job-board-view.png",
+        pageSrc: "./projects/job_board/job_board_app.html",
+        technologyUsed: ["Flask", " Python", " Jinja", " Bootstrap", " HTML", " CSS", " JavaScript"],
+        projectGroup: "Web Full-stack",
+        mainProject: true,
+        objectives: "To build a Full-stack app was my long time dream. In Februery 2024 I finally started with a Job board App."
+            + " This project is currently in development."
+    },
     {
         projectName: "Frequency analysis of shallow earthquakes",
         imgSrc: "./figures/fk_analysis.png",
         pageSrc: "./projects/fk-analysis/fk-analysis-project.html",
         technologyUsed: ["Python3", " Numpy", " ObsPy", " Pandas"],
         projectGroup: "Data Analysis",
+        mainProject: true,
         objectives: "Analysing shallow eathquakes gives better understanding about the near-surface structure."
+            + "This is basic concept in seismology, hence seismologist need to transform seismic signal into "
+            + "data frames to be able to process them on the computers. Python is often used, together with ObsPy, "
+            + "common seismology library."
     },
-    {
-        projectName: "Valencia Gallery",
-        imgSrc: "./figures/valencia-city-gallery-view.png",
-        pageSrc: "./projects/gallery-grid/gallery.html",
-        technologyUsed: ["HTML", " CSS"],
-        projectGroup: "Web Front-end",
-        objectives: "As someone learning Front-end technologies, I was blown away with CSS grid styles and had to make my own project where I can put my new knowledge into practice. Hence I created simple grid gallery with pictures of the city where I am based - Valencia"
-    },
-    {
-        projectName: "Calculator",
-        imgSrc: "./figures/calculator-view.png",
-        pageSrc: "./projects/calculator/calculator.html",
-        technologyUsed: ["HTML", " CSS", " JavaScript"],
-        projectGroup: "Web Front-end",
-        objectives: "I couldn't wait until I reach level to create calculater. It was great project to put my JavaScript to test and show that I am able to create simple app in front-end."
-    },/*
-    {
-        projectName: "Language app Demo",
-        imgSrc: "./figures/quiz-view.png",
-        pageSrc: "./projects/Spanish-quizz-intermediate/spanish-quiz-app.html",
-        technologyUsed: ["HTML", " CSS", " JavaScript"],
-        projectGroup: "Web Front-end",
-        objectives: "As a person who loves language learning, I wanted to create simple app demo that can possible serve as a starting point for a future learning app. I focused on rendering informaion from front-end stored object, gathering information about the user input and finally use that information for evaluation of the multiple questions."
-    },*/
-    {
-        projectName: "Joke CRUD App",
-        imgSrc: "./figures/joke-generator-view.png",
-        pageSrc: "./projects/joke-generator/joke-generator.html",
-        technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git"],
-        projectGroup: "Web Back-end",
-        objectives: "I created a simple CRUD app to demonstrate my undestanding of HTTP requests. The app will generated random joke from a database. User can add jokes into the database and also delete them."
-    },
-    {
-        projectName: "Log In",
-        imgSrc: "./figures/log-in-view.png",
-        pageSrc: "./projects/log-in/log-in.html",
-        technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git"],
-        projectGroup: "Web Back-end",
-        objectives: "This simple log in page was created after I went through course on autorization and authetification. It is still in progress."
-    },
-    {
-        projectName: "Web Scraping and uploading",
-        imgSrc: "./figures/web-scraper-view.png",
-        pageSrc: "./projects/web-scraper/web-scraper.html",
-        technologyUsed: ["HTML", " CSS", " JavaScript", " Node.js", " Express.js", " Git", " Python", " JSON"],
-        projectGroup: "Web Back-end",
-        objectives: "This project was created to scrape data from a testing website and further upload those through a HTTP requests to a clean frontend layout."
-    }
-    ]
+    //]
+
+    //const fun_projects = [
+        {
+            projectName: "CSS Art",
+            imgSrc: "",
+            pageSrc: "./projects/css_art/css_art.html",
+            technologyUsed: ["HTML", " CSS"],
+            projectGroup: "Web Front-end",
+            mainProject: false,
+            objectives: "I absolutely love the flexibility of divs and css together. "
+                + "To demonstrated understaing of space layout, layers and CSS, "
+                + "I decided to create a developer workspace CSS art."
+        },
+        {
+            projectName: "Calculator",
+            imgSrc: "./figures/calculator-view.png",
+            pageSrc: "./projects/calculator/calculator.html",
+            technologyUsed: ["HTML", " CSS", " JavaScript"],
+            projectGroup: "Web Front-end",
+            mainProject: false,
+            objectives: "This is one of my first small projects in Front-end development."
+             + " The main goal was to put my JavaScript to test while also keep an eye on details "
+             + "such as number formatting or differentiace between user inputs. Great coding workout."
+        }
+        ]
 
 console.log("hello, this is a test");
 
@@ -132,7 +58,10 @@ const redirect = function(src) {
     window.location.href = src;
  }
 
+ // Main Projects
+
  const projectsSection = document.getElementById('wrap-projects');
+ const projectsFunSection = document.getElementById('wrap-fun-projects');
 
  
  for (let i = 0; i < projects.length; i++) {
@@ -144,15 +73,21 @@ const redirect = function(src) {
         projectNew.classList.add("project-back-end");
     } else if (projects[i].projectGroup === "Data Analysis") {
         projectNew.classList.add("project-data-science")
+    } else if (projects[i].projectGroup === "Web Full-stack") {
+        projectNew.classList.add("project-full-stack")
     }
 
-    const projectGroup = document.createElement('p');
-    projectGroup.className = "project-group";
-    projectGroup.innerHTML = projects[i].projectGroup;
+    //const projectGroup = document.createElement('p');
+    //projectGroup.className = "project-group";
+    //projectGroup.innerHTML = projects[i].projectGroup;
     
+    if (projects[i].mainProject === true) {
+        projectsSection.appendChild(projectNew);
+    } else {
+        projectsFunSection.appendChild(projectNew);
+    }
     
-    projectsSection.appendChild(projectNew);
-    projectNew.appendChild(projectGroup);
+    //projectNew.appendChild(projectGroup);
 
     const projectSubDivLeft = document.createElement('div');
     projectSubDivLeft.className = "project-sub-div-left";
@@ -162,12 +97,9 @@ const redirect = function(src) {
 
     const projectView = document.createElement('div');
     projectView.className = "project-view";
-    projectView.addEventListener('click', () => {
-        redirect(projects[i].pageSrc);
-    })
-
-    const githubLink = document.createElement('p');
-    githubLink.className = "git-hub-link";
+    //projectView.addEventListener('click', () => {
+    //    redirect(projects[i].pageSrc);
+    //})
 
     const projectSubDivRight = document.createElement('div');
     projectSubDivRight.className = "project-sub-div-right";
@@ -177,6 +109,9 @@ const redirect = function(src) {
 
     const projectObjectives = document.createElement('p');
     projectDescription.className = "project-objectives";
+
+    const projectButtonLink = document.createElement('button');
+    projectButtonLink.className = "project-link-btn";
 
     projectNew.appendChild(projectSubDivLeft);
     projectNew.appendChild(projectSubDivRight);
@@ -194,9 +129,12 @@ const redirect = function(src) {
     projectSubDivRight.appendChild(projectObjectives);
     projectObjectives.innerHTML = `<span class="bold">Objectives:</span> ${projects[i].objectives}`;
 
-    /*
-    projectSubDivRight.appendChild(githubLink);
-    githubLink.innerHTML = "<a href=''>GitHub Code</a>"; */
-
+    projectSubDivRight.appendChild(projectButtonLink);
+    projectButtonLink.innerHTML = "See project";
+    projectButtonLink.addEventListener('click', () => {
+        redirect(projects[i].pageSrc);
+    })
 
  }
+
+ // Fun Projects

@@ -4,46 +4,54 @@
         <title>Hana Koubova</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="../../styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
 
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <nav class="navbar navbar-expand-lg navbar-light d-flex justify-content-center">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
                             <a class="nav-link" href="/index.html">Home</a>
                         </li>
                     </ul>
-                </div>
             </nav> 
         </header>
         <main>
             <div id="page-container">
-                <div id="content-wrap" class="test-wrap">
-                    <h1>FK analysis of shallow earthquakes</h1>
-                    <div class="seismic-project-wrap">
-                        <p>This program imports a dataset (can be in various formats), transfers it's data into time series and can be further analysed with NumPy and ObsPy libraries.</p>
-                        <img class="seismic-pics" src="../../figures/seismograms.png" alt="seismogram-plot">
-                        <p>Seismic events are usually recorded in three directions, hence there are three seismic traces in the figure above. This data can be further filtered based on specific needs.</p>
-                        <img class="seismic-pics" src="../../figures/fk_analysis.png" alt="fk-analysis-plot">
-                        <p>After seirous of manipulations, FK analysis can be performed on the data.</p>
-                        <p>This analysis was part of a research of shallow seismic events.</p>
-                        <p><a href="https://github.com/hana-koubova/frequency_analysis_seismic_data/">Git Hub Code</a></p>
+                <div id="content-wrap">
+                    <section id="seismic-section">
+                    <div class="content-wrap-project-page d-flex flex-column justify-content-center align-items-center">
+                        
+                        <h2 class="m-3">FK analysis of shallow earthquakes</h2>
+
+                        <div class="seismic-project-wrap d-flex flex-column justify-content-center align-items-center m-3">
+                            
+                            <p>This program imports a dataset (can be in various formats), transfers it's data into time series and can be further analysed with NumPy and ObsPy libraries.</p>
+                            
+                            <img src="../../figures/seismograms.png" alt="seismogram-plot">
+                            
+                            <p>Seismic events are usually recorded in three directions, hence there are three seismic traces in the figure above. This data can be further filtered based on specific needs.</p>
+                            
+                            <img src="../../figures/fk_analysis.png" alt="fk-analysis-plot">
+                            
+                            <p>After seirous of manipulations, FK analysis can be performed on the data.</p>
+                            
+                            <p>This analysis was part of a research of shallow seismic events.</p>
+                            
+                            <p><a href="https://github.com/hana-koubova/frequency_analysis_seismic_data/">Git Hub Code</a></p>
+                        </div>
                     </div>
+                    </section>
                 </div>
             </div>
-            <br>
-            <br>
             <footer>
                 <p>Copyright Hana Koubova 2023</p>
             </footer>
         </main>
-        <script src="main.js"></script>
+        
     </body>
 
     </html>
