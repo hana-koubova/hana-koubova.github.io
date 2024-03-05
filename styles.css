@@ -88,6 +88,10 @@ h2 {
     text-align: center;
 }
 
+#hero h2 {
+    text-align: left;
+}
+
 h1, h2, .line, .highlight-word {
     background: -webkit-linear-gradient(45deg, #6e0270, #d80077 80%);
     background-clip: border-box;
@@ -349,6 +353,13 @@ h1, h2, .line, .highlight-word {
     #wrap-projects .project-div {
         width: 100%
     }
+
+    .project-link-btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 .shadow-light {
@@ -424,6 +435,24 @@ footer {
 
     .to-reverse {
         flex-direction: column-reverse;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .job-board-project-wrap {
+        width: 100%;
+    }
+
+    #job-board-section section {
+        padding: 0px;
+    }
+
+    #job-board-section h4 {
+        font-size: 1.2em;
+    }
+
+    #job-board-section p {
+        font-size: 1em;
     }
 }
 
