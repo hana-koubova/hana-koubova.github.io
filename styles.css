@@ -332,10 +332,10 @@ h1, h2, .line, .highlight-word {
     .project-sub-div-left, .project-sub-div-right {
         width: 80%;
     }
-
+/*
     .project-view {
-        width: 60%;
-    }
+        width: 80%;
+    }*/
 
     #wrap-projects {
         width: 95%;
