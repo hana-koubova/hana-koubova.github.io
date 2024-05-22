@@ -14,6 +14,15 @@ const projects = [
             + " This project is currently in development."
     },
     {
+        projectName: "Fictional Users Generator",
+        imgSrc: "./figures/user-generator-view.png",
+        pageSrc: "./projects/user_generator/user_generator_app.html",
+        technologyUsed: ["Flask", " Python", " Jinja", " Bootstrap", " HTML", " CSS", " JavaScript"],
+        projectGroup: "Web Full-stack",
+        mainProject: true,
+        objectives: "Create app that generates user information and allow you to download data in CSV or Excel."
+    },
+    {
         projectName: "Frequency analysis of shallow earthquakes",
         imgSrc: "./figures/fk_analysis.png",
         pageSrc: "./projects/fk-analysis/fk-analysis-project.html",
